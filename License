@@ -1,0 +1,2 @@
+uses MPU6050 library for micropython downloaded from blackboard week 14 
+uses the pigpio library https://abyz.me.uk/rpi/pigpio/
