@@ -17,19 +17,19 @@ def NumCheck(num):
 
 def MotorSetUp():
     m1 = 23
-m2 = 25
-pwm = pigpio.pi() 
-pwm2 = pigpio.pi() 
-pwm.set_mode(m1, pigpio.OUTPUT)
-pwm2.set_mode(m2, pigpio.OUTPUT)
-pwm.set_PWM_frequency(m1, 50)
-pwm.set_PWM_range(m1, 20000) # 1,000,000 / 50 = 20,000us for 100% duty cycle
-pwm2.set_PWM_frequency(m2, 50)
-pwm2.set_PWM_range(m2, 20000) # 1,000,000 / 50 = 20,000us for 100% duty cycle
-sleep(5)
-oldx = 0
-oldy = 0
-oldz = 0
+    m2 = 25
+    pwm = pigpio.pi() 
+    pwm2 = pigpio.pi() 
+    pwm.set_mode(m1, pigpio.OUTPUT)
+    pwm2.set_mode(m2, pigpio.OUTPUT)
+    pwm.set_PWM_frequency(m1, 50)
+    pwm.set_PWM_range(m1, 20000) # 1,000,000 / 50 = 20,000us for 100% duty cycle
+    pwm2.set_PWM_frequency(m2, 50)
+    pwm2.set_PWM_range(m2, 20000) # 1,000,000 / 50 = 20,000us for 100% duty cycle
+    sleep(5)
+    oldx = 0
+    oldy = 0
+    oldz = 0
 
 def MotorControl():
         nums = Read()
