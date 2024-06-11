@@ -15,7 +15,7 @@ def NumCheck(num):
         result = math.ceil(nums[num] / 100) * 100
         return result
 
-def motorSetUp():
+def MotorSetUp():
     m1 = 23
 m2 = 25
 pwm = pigpio.pi() 
